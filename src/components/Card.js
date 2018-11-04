@@ -2,11 +2,11 @@ import React from "react";
 import "./Card.css"
 
 
-const Card = ({name, email, id}) => {
+const Card = ({name, email, id, cardClick}) => {
  
 
     return (
-        <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow5 text-center">
+        <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow5 text-center" onClick={cardClick}>
           <img src={`https://robohash.org/${id}?200x200`} alt="Robots" />
           <div>
             <h2>{name}</h2>
